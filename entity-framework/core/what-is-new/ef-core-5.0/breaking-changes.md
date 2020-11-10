@@ -485,7 +485,7 @@ These queries could return incorrect results if the inner collection contained a
 
 **New behavior**
 
-These queries are no loger suppored. Exception is thrown indicating that we don't have enough information to correctly build the results.
+These queries are no loger supported. Exception is thrown indicating that we don't have enough information to correctly build the results.
 
 **Why**
 
@@ -526,11 +526,11 @@ context.Blogs
 
 **New behavior**
 
-These queries are no loger suppored. Exception is thrown indicating that we can't create an object of Queryable type and suggesting how this could be fixed.
+These queries are no loger supported. Exception is thrown indicating that we can't create an object of Queryable type and suggesting how this could be fixed.
 
 **Why**
 
-We can't materialize an object of a Queryable type, so they would automatically be created using `List<T>` type instead. This would often cause an exception due to type mismatch which was not very clear and could be surprising to some users. We decided to recognize the pattern and throw a more meaningful exception.
+We can't materialize an object of a Queryable type, so they wou+ld automatically be created using `List<T>` type instead. This would often cause an exception due to type mismatch which was not very clear and could be surprising to some users. We decided to recognize the pattern and throw a more meaningful exception.
 
 **Mitigations**
 
